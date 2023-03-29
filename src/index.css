@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'Arial Rounded MT Bold';
+  src: url(../src//fonts/1212-font.otf);
+}
