@@ -109,7 +109,7 @@ function Main() {
                                 Запись на первый день марафона
                             </p>
                             <div className='free'>
-                                <p>FREEP</p>
+                                <p>FREE</p>
                             </div>
                         </div>
                     </div>    
