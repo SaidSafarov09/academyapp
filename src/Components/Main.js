@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/main.scss';
+import '../styles/media.scss';
 import logo from '../img/logo.svg';
 import '../styles/arrow.scss';
 import kart from '../img/sakartvelo.png';
 import shw from '../img/schwed.png';
+import Swiper from './Swiper';
 
 function Main() {
     return (
@@ -17,6 +19,15 @@ function Main() {
                         <a href='#'>Отзывы</a>
                         <a href='#'>Пробный урок</a>
                         <a href='#'>Контакты</a>
+                        <div class="col">
+                            <div class="con">
+                                <div class="bar arrow-top"></div>
+                                <div class="bar arrow-middle"></div>
+                                <div class="bar arrow-bottom"></div>
+                            </div>
+                        </div>
+                        <a href="https://codepen.io/tonkec//" class="ua" target="_blank">
+                            <i class="fa fa-user"></i></a>
                     </div>
                 </header>
                 <div className='main_block_content'>
@@ -96,7 +107,7 @@ function Main() {
                         <p>Отзывы</p>
                     </div>
                     <div className='feedback_carousel'>
-
+                        <Swiper></Swiper>
                     </div>
                 </div>
             </div>
@@ -138,7 +149,7 @@ function Main() {
                     </div>
                     <div className='form_button'>
                         <a href='#'>
-                            Начать путь в <b>IT</b>
+                            Начать путь в <b>&nbsp;IT</b>
                         </a>
                     </div>
                 </div>
