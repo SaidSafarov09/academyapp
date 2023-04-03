@@ -10,7 +10,7 @@ function Main() {
     <div className='main'>
       <div className='main_block'>
         <header>
-          <img
+          <img className='header__logo'
             src={logo}
             alt='Логотип академии.'
           ></img>
@@ -35,14 +35,14 @@ function Main() {
           className='main_block_content'
           id='first-screen'
         >
-          <h1>S&K Academy</h1>
-          <p>
+          <h1 className='main-title'>S&K Academy</h1>
+          <p className='first-screen__text'>
             Это академия которая готовит к<br></br>
             реальным задачам, которая не просто<br></br>
             даёт знания, но и рассказывает как их<br></br>
             продавать
           </p>
-          <a href='#form-block'>
+          <a className='first-screen__button' href='#form-block'>
             Начать путь в <b>IT</b>
           </a>
         </div>
@@ -52,7 +52,7 @@ function Main() {
         id='course-block'
       >
         <div className='steps_content'>
-          <div className='steps_content_name'>
+          <div className='title steps_content_name'>
             <p>За 14 дней с нуля до Джуна!</p>
           </div>
           <div className='steps_content_main'>
@@ -140,7 +140,7 @@ function Main() {
         id='review-block'
       >
         <div className='feedback_content'>
-          <div className='feedback_content_name'>
+          <div className='title feedback_content_name'>
             <p>Отзывы</p>
           </div>
           <div className='feedback_carousel'>
@@ -150,21 +150,21 @@ function Main() {
       </div>
 
       <form
-        action='http://localhost:3001/clients'
+        action='http://sk-academy.it:3001/clients'
         method='POST'
         className='form'
         id='form-block'
       >
         <div className='form_content'>
           <div className='form_name_parent'>
-            <div className='form_content_name'>
+            <div className='title form_content_name'>
               <p>Запись на первый день марафона</p>
               <div className='free'>
                 <p>FREE</p>
               </div>
             </div>
           </div>
-          <div className='form_name'>
+          <div className='form__input-container form_name'>
             <label>
               <input
                 type='text'
@@ -174,7 +174,7 @@ function Main() {
               />
             </label>
           </div>
-          <div className='form_number'>
+          <div className='form__input-container form_number'>
             <label>
               <input
                 type='text'
@@ -184,7 +184,7 @@ function Main() {
               />
             </label>
           </div>
-          <div className='form_skills'>
+          <div className='form__input-container form_skills'>
             <select
               name='expirience'
               required
@@ -204,7 +204,7 @@ function Main() {
             </select>
           </div>
 
-          <div className='form_promo-code form_number'>
+          <div className='form__input-container form_promo-code form_number'>
             <label>
               <input
                 type='text'
@@ -213,7 +213,7 @@ function Main() {
               />
             </label>
           </div>
-          <div className='form_button'>
+          <div className='form__input-container form_button'>
             <button
               type='submit'
               href='#'
