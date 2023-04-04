@@ -27,7 +27,7 @@ function Main() {
             src={logo}
             alt='Логотип академии.'
           ></img>
-          <div className='header_links'>
+          <div className='header_links mobile-menu'>
             <a href='#first-screen'>Главная</a>
             <a href='#course-block'>Про курс</a>
             <a href='#review-block'>Отзывы</a>
@@ -36,7 +36,10 @@ function Main() {
             {/* <a href="https://codepen.io/tonkec//" class="ua" target="_blank" rel="noreferrer">
                             <i class="fa fa-user"></i></a> */}
           </div>
-          <div class='col'>
+          <div class='col' onClick={() => {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('mobile-menu--hidden')
+          }}>
             <div class='con'>
               <div class='bar arrow-top'></div>
               <div class='bar arrow-middle'></div>
@@ -98,7 +101,7 @@ function Main() {
         res = await data.ok;
     });
     if (res) {
-       console.log('Запрос отправлен'); 
+      handleOpenSubmit();
     } else {
         console.log('чёт не то');
     }
@@ -164,7 +167,6 @@ function Main() {
           </div>
           <div className='form__input-container form_button'>
             <button
-              onClick={handleOpenSubmit  }
               type='submit'
               href='#'
             >

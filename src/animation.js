@@ -1,5 +1,5 @@
 import ScrollReveal from 'scrollreveal';
-
+const isMobile = window.matchMedia('(max-width: 768px)');
 
 const move = (elem, origin, distance = '250px', duration = 1200) => {
   ScrollReveal().reveal(elem, {
@@ -22,8 +22,11 @@ const scale = (elem, duration = 1500) => {
 };
 
 export const startAnimation = () => {
-    console.log('1');
-    move('.header_links', 'right', '1000px', 2000);
+  console.log('1');
+  if (!isMobile.matches) {
+      move('.header_links', 'right', '1000px', 2000);
+    }
+    
     scale('.header__logo', 2000);
     move('.main-title', 'left', '1000px', 2000);
     move('.first-screen__text', 'right', '1000px', 2000);

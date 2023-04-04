@@ -285,7 +285,10 @@ function ModalWindow() {
                   >
                     <div className='modal'>
                     <p>
-                        День консультации
+                    - Знакомство с медиа запросами и адаптивностью
+                        <br></br>
+                        - Создание адаптивности для учебного адаптивного проекта
+                    
                       </p>
                     </div>
                   </Modal>
@@ -299,10 +302,9 @@ function ModalWindow() {
                   >
                     <div className='modal'>
                     <p>
-                    - Знакомство с медиа запросами и адаптивностью
-                        <br></br>
-                        - Создание адаптивности для учебного адаптивного проекта
-                    
+                    - Знакомство с JS
+                      <br></br>
+                    - Создание JS функционала для учебного адаптивного проекта
                       </p>
                     </div>
                   </Modal>
@@ -320,9 +322,7 @@ function ModalWindow() {
                   >
                     <div className='modal'>
                     <p>
-                    - Знакомство с JS
-                      <br></br>
-                    - Создание JS функционала для учебного адаптивного проекта
+                    - Создание html для учебного проекта REACT
                       </p>
                     </div>
                   </Modal>
@@ -336,7 +336,7 @@ function ModalWindow() {
                   >
                     <div className='modal'>
                     <p>
-                    - Создание html для учебного проекта REACT
+                    - Создание стилей для учебного проекта REACT
                       </p>
                     </div>
                   </Modal>
@@ -350,7 +350,9 @@ function ModalWindow() {
                   >
                     <div className='modal'>
                     <p>
-                    - Создание стилей для учебного проекта REACT
+                    - Разбивка html кода на вьюхи
+                      <br></br>
+                    - Создание presentor
                       </p>
                     </div>
                   </Modal>
@@ -368,42 +370,12 @@ function ModalWindow() {
                   >
                     <div className='modal'>
                     <p>
-                    - Разбивка html кода на вьюхи
-                      <br></br>
-                    - Создание presentor
-                      </p>
-                    </div>
-                  </Modal>
-                <div className='arrow'></div>
-                <button onClick={handleOpen13} className='day_13'>
-                  <p>День 13</p>
-                </button>
-                  <Modal 
-                    onClose={handleClose13}
-                    open={open13}
-                  >
-                    <div className='modal'>
-                    <p>
                     - Куда двигаться дальше
                       <br></br>
                     - Как результативно искать работу<br></br> (Реальные успешные кейсы к каждому варианту)
                       <br></br>
                       <br></br>
                     - Создание резюме
-                      </p>
-                    </div>
-                  </Modal>
-                <div className='arrow'></div>
-                <button onClick={handleOpen14} className='day_14'>
-                  <p>День 14</p>
-                </button>
-                  <Modal 
-                    onClose={handleClose14}
-                    open={open14}
-                  >
-                    <div className='modal'>
-                      <p>
-                      Личный проект и его загрузка на хостинг
                       </p>
                     </div>
                   </Modal>
