@@ -103,13 +103,13 @@
     }
     .main .form .form_content .form_name input,
     .main .form .form_content .form_number input {
-        height: 50px;
+        height: 30px;
         &::placeholder {
             font-size: 20px;
         }
     }
     .main .form .form_content .form_skills select {
-        height: 50px;
+        height: 70px;
         font-size: 20px;
     }
     .main .form .form_content .form_button a {
@@ -119,6 +119,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .main .footer .footer_content .phone_number a ,
+    .main .footer .footer_content .brand a{
+        font-size: 18px;
     }
 }
 
@@ -142,7 +146,6 @@
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
-        padding: 0 150px;
         box-sizing: border-box;
     }
     .main .footer .footer_content .phone_number {
@@ -158,14 +161,15 @@
     }
     .main .form .form_content .form_name input,
     .main .form .form_content .form_number input {
-        height: 50px;
+        height: 30px;
         &::placeholder {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
     .main .form .form_content .form_skills select {
-        height: 50px;
-        font-size: 20px;
+        height: 70px;
+        font-size: 18px;
+        width: 410px;
     }
     .main .form .form_content .form_button a {
         max-width: 250px;
@@ -187,6 +191,19 @@
     }
     .main .form .form_content .form_name_parent {
         padding: 0;
+    }
+    .main .footer .footer_content .phone_number, 
+    .main .footer .footer_content .links {
+        padding-top: 10px;
+    }
+    .main .footer .footer_content .phone_number a {
+        font-size: 18px;
+    }
+    .main .footer .footer_content .links {
+        padding-top: 10px;
+    }
+    .main .form .form_content .form_button button {
+        font-size: 30px;
     }
 }
 
@@ -213,6 +230,16 @@
     .main .main_block header img {
         width: 150px;
     }
+    .main .footer .footer_content .brand a,
+    .main .footer .footer_content .phone_number a {
+        font-size: 18px;
+    }
+    .main .footer .footer_content .phone_number {
+        padding-top: 10px !important;
+    }
+    .main .footer .footer_content .links {
+        padding-top: 10px;
+    }
 
 }
 
@@ -224,16 +251,19 @@
     }
     .main .form .form_content .form_name input,
     .main .form .form_content .form_number input {
-        width: 290px;
-        height: 40px;
+        width: 250px;
+        height: 20px;
         &::placeholder {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
     .main .form .form_content .form_skills select {
-        width: 300px;
-        height: 40px;
-        font-size: 16px;
+        width: 280px;
+        height: 60px;
+        font-size: 14px;
+    }
+    .main .form .form_content .form_skills::after {
+        right: 11%;
     }
     .main .form .form_content .form_button a {
         max-width: 200px;
@@ -254,6 +284,17 @@
     .main .main_block .main_block_content p {
         font-size: 16px;
     }
+    .main .footer .footer_content .brand a {
+        font-size: 16px;
+    }
+    .main .footer .footer_content .phone_number a {
+        font-size: 16px;
+    }
+    .main .form .form_content .form_button button {
+        font-size: 20px;
+        width: 250px;
+        line-height: 25px;
+    }
 }
 
 @media (max-width:400px) {
@@ -264,15 +305,15 @@
     }
     .main .form .form_content .form_name input,
     .main .form .form_content .form_number input {
-        width: 250px;
-        height: 40px;
+        width: 200px;
+        height: 5px;
         &::placeholder {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
     .main .form .form_content .form_skills select {
-        width: 250px;
-        height: 40px;
+        width: 230px;
+        height: 60px;
         font-size: 16px;
     }
     .main .form .form_content .form_button a {
@@ -320,6 +361,9 @@
     }
     .main .main_block .main_block_content h1 {
         font-size: 32px;
+    }
+    .main .footer .footer_content .brand a {
+        font-size: 14px;
     }
     
 }

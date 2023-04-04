@@ -11,6 +11,12 @@
     border-radius: 10px;
     display: flex;
 }
+@media (max-width: 1400px) {
+    .arrow {
+        width: 120px;
+    }
+    
+}
 .arrow::after {
     content: '';
     position: absolute;
@@ -47,6 +53,14 @@
     border-radius: 10px;
     display: flex;
 }
+@media (max-width: 1400px) {
+    .arrow_back {
+        width: 120px;
+    }
+    .arrow_back::after {
+        right: 83px;
+    }
+}
 .arrow_back::after {
     content: '';
     position: absolute;
@@ -58,6 +72,11 @@
     transform: rotate(-30deg);
     border-radius: 10px;
 }
+@media (max-width: 1400px) {
+    .arrow_back::after {
+        right: 83px;
+    }
+}
 .arrow_back::before {
     content: '';
     position: absolute;
@@ -68,4 +87,15 @@
     background-color: #fff;
     transform: rotate(30deg);
     border-radius: 10px;
+}
+@media (max-width: 1400px) {
+    .arrow_back::before {
+        right: 83px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .arrow , .arrow_back {
+        display: none;
+    }
 }

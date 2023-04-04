@@ -16,7 +16,7 @@ export default () => {
   return (
     <Swiper
       breakpoints={{
-        640: {
+        768: {
           slidesPerView: 2,
         },
         1024: {

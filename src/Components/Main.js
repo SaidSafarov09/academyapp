@@ -4,8 +4,21 @@ import logo from '../img/logo.svg';
 import kart from '../img/sakartvelo.png';
 import shw from '../img/schwed.png';
 import Swiper from './Swiper';
+import ModalWindow from './ModalWindow';
+import Modal from '@material-ui/core/Modal';
 
 function Main() {
+
+    const [opensubmit, setOpenSubmit] = React.useState(false);
+  
+    const handleCloseSubmit = () => {
+        setOpenSubmit(false);
+    };
+    
+    const handleOpenSubmit = () => {
+        setOpenSubmit(true);
+    };
+
   return (
     <div className='main'>
       <div className='main_block'>
@@ -47,93 +60,8 @@ function Main() {
           </a>
         </div>
       </div>
-      <div
-        className='steps'
-        id='course-block'
-      >
-        <div className='steps_content'>
-          <div className='title steps_content_name'>
-            <p>За 14 дней с нуля до Джуна!</p>
-          </div>
-          <div className='steps_content_main'>
-            <div className='steps_days'>
-              <div className='days_1'>
-                <div className='day_1'>
-                  <p>День 1</p>
-                </div>
-                <div className='arrow'></div>
-                <div className='day_2'>
-                  <p>День 2</p>
-                </div>
-                <div className='arrow'></div>
-                <div className='day_3'>
-                  <p>День 3</p>
-                </div>
-              </div>
-              <div className='arrow_3'>
-                <div className='arrow'></div>
-              </div>
-              <div className='days_2'>
-                <div className='day_4'>
-                  <p>День 4</p>
-                </div>
-                <div className='arrow'></div>
-                <div className='day_5'>
-                  <p>День 5</p>
-                </div>
-              </div>
-              <div className='arrow_5'>
-                <div className='arrow'></div>
-              </div>
-              <div className='days_3'>
-                <div className='day_6'>
-                  <p>День 6</p>
-                </div>
-                <div className='arrow_back'></div>
-                <div className='day_7'>
-                  <p>День 7</p>
-                </div>
-                <div className='arrow_back'></div>
-                <div className='day_8'>
-                  <p>День 8</p>
-                </div>
-              </div>
-              <div className='arrow_8'>
-                <div className='arrow'></div>
-              </div>
-              <div className='days_4'>
-                <div className='day_9'>
-                  <p>День 9</p>
-                </div>
-                <div className='arrow_back'></div>
-                <div className='day_10'>
-                  <p>День 10</p>
-                </div>
-                <div className='arrow_back'></div>
-                <div className='day_11'>
-                  <p>День 11</p>
-                </div>
-              </div>
-              <div className='arrow_11'>
-                <div className='arrow'></div>
-              </div>
-              <div className='days_5'>
-                <div className='day_12'>
-                  <p>День 12</p>
-                </div>
-                <div className='arrow'></div>
-                <div className='day_13'>
-                  <p>День 13</p>
-                </div>
-                <div className='arrow'></div>
-                <div className='day_14'>
-                  <p>День 14</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      <ModalWindow/>
 
       <div
         className='feedback'
@@ -191,7 +119,7 @@ function Main() {
                 type='text'
                 name='client_name'
                 placeholder='Ваше имя'
-                required
+               
               />
             </label>
           </div>
@@ -201,14 +129,14 @@ function Main() {
                 type='text'
                 name='phone_number'
                 placeholder='Ваш телеграмм/номер телефона'
-                required
+                r
               />
             </label>
           </div>
           <div className='form__input-container form_skills'>
             <select
               name='expirience'
-              required
+              
             >
               <option
                 selected
@@ -236,11 +164,25 @@ function Main() {
           </div>
           <div className='form__input-container form_button'>
             <button
+              onClick={handleOpenSubmit  }
               type='submit'
               href='#'
             >
               Начать путь в <b>&nbsp;IT</b>
             </button>
+            <Modal 
+                    onClose={handleCloseSubmit}
+                    open={opensubmit}
+                  >
+                    <div className='modal_main'>
+                        <p>Данные успешно отправлены!<br></br>
+                        Скоро с вами свяжется наш менеджер.
+                        </p>
+                        <button onClick={handleCloseSubmit}>
+                            Готово
+                        </button>
+                    </div>
+                  </Modal>
           </div>
         </div>
       </form>
