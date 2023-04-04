@@ -150,10 +150,31 @@ function Main() {
       </div>
 
       <form
-        action='http://sk-academy.it:3001/clients'
+        action='/api'
         method='POST'
         className='form'
-        id='form-block'
+              id='form-block'
+              onSubmit={async (evt) => {
+    evt.preventDefault();
+                  const formData = new FormData(evt.target);
+                  console.log(formData);
+    let res;
+    await fetch('https://sk-academy.it/api/index.php', {
+        method: 'POST',
+        headers: {
+            Accept: "application/json"
+        },
+        body: formData,
+    }).then(async (data) => {
+        console.log(data);
+        res = await data.ok;
+    });
+    if (res) {
+       console.log('Запрос отправлен'); 
+    } else {
+        console.log('чёт не то');
+    }
+}}
       >
         <div className='form_content'>
           <div className='form_name_parent'>
