@@ -96,7 +96,7 @@ function ModalWindow() {
     };
     
     const handleOpen9 = () => {
-        setOpen4(true);
+        setOpen9(true);
     };
 
     const [open10, setOpen10] = React.useState(false);
@@ -129,26 +129,6 @@ function ModalWindow() {
         setOpen12(true);
     };
 
-    const [open13, setOpen13] = React.useState(false);
-  
-    const handleClose13 = () => {
-        setOpen13(false);
-    };
-    
-    const handleOpen13 = () => {
-        setOpen13(true);
-    };
-
-    const [open14, setOpen14] = React.useState(false);
-  
-    const handleClose14 = () => {
-        setOpen14(false);
-    };
-    
-    const handleOpen14 = () => {
-        setOpen14(true);
-    };
-
 
 
   return (
@@ -177,17 +157,44 @@ function ModalWindow() {
                     open={open1}
                   >
                     <div className='modal'>
-                      <p>
-                      - Знакомство с преподавателями
-                        <br></br>
-                      - Чуть чуть о программе марафона
-                        <br></br>
-                      - Знакомство с Figma
-                        <br></br>
-                      - Знакомство с html и css
-                        <br></br>
-                      - Создание мини сайта
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                  - Знакомство с преподавателями
+                                    <br></br>
+                                    <br></br>
+                                  - Немного о программе марафона
+                                    <br></br>
+                                    <br></br>
+                                  - Знакомство с Figma
+                                    <br></br>
+                                    <br></br>
+                                  - Знакомство с html и css
+                                    <br></br>
+                                  - Создание мини сайта
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                    - Лекция(Текст) про основные html теги и основные css свойства
+                                    <br></br>
+                                    <br></br>
+                                    - Создание своего мини сайта
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/ztprxR9n1fL1iL9858D6Lq/Fashion?node-id=2%3A221&t=KSddfsQVcoKwlRaU-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
 
@@ -201,9 +208,33 @@ function ModalWindow() {
                     open={open2}
                   >
                     <div className='modal'>
-                    <p>
-                    - Создание html для учебного проекта landing page
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                  - Создание html для учебного проекта landing page
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                    - Лекция про БЭМ
+                                    <br></br>
+                                    <br></br>
+                                    - Создание html для своих проектов
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
 
@@ -216,9 +247,33 @@ function ModalWindow() {
                     open={open3}
                   >
                     <div className='modal'>
-                    <p>
-                    - Создание css для учебного проекта landing page
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Создание css для учебного проекта landing page
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Лекция про крупные/средние/мелкие сетки на гридах и флексах
+                                    <br></br>
+                                    <br></br>
+                                    - Создание css для своих проектов
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
               </div>
@@ -234,9 +289,33 @@ function ModalWindow() {
                     open={open4}
                   >
                     <div className='modal'>
-                    <p>
-                    - Знакомство с git и размещение учебного проекта landing page на github pages
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Знакомство с git и размещение учебного проекта landing page на github pages
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Лекция про git
+                                    <br></br>
+                                    <br></br>
+                                    - Разместить свои проекты на github pages
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
                 <div className='arrow'></div>
@@ -248,9 +327,33 @@ function ModalWindow() {
                     open={open5}
                   >
                     <div className='modal'>
-                    <p>
-                    - Создание html для учебного адаптивного проекта
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Создание html для учебного адаптивного проекта
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Лекция про адаптивные сайты
+                                    <br></br>
+                                    <br></br>
+                                    - Создание html для своих проектов
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
               </div>
@@ -266,13 +369,38 @@ function ModalWindow() {
                     open={open6}
                   >
                     <div className='modal'>
-                    <p>
-                      - Знакомство с препроцесорами sass и less 
-                        <br></br>
-                      - Знакомство с webpack
-                        <br></br>
-                      - Создание стилий для учебного адаптивного проекта на базе препроцесоров
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Знакомство с препроцесорами sass и less (Нужно на примерах показать их преимущества)
+                                <br></br>
+                                <br></br>
+                                - Знакомство с webpack
+                                <br></br>
+                                <br></br>
+                                - Создание стилей для учебного адаптивного проекта на базе препроцессоров
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Лекция про sass и less, а так же про webpack
+                                    <br></br>
+                                    - Создание стилей для своих проектов на базе препроцессоров
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
                 <div className='arrow_back'></div>
@@ -284,12 +412,36 @@ function ModalWindow() {
                     open={open7}
                   >
                     <div className='modal'>
-                    <p>
-                    - Знакомство с медиа запросами и адаптивностью
-                        <br></br>
-                        - Создание адаптивности для учебного адаптивного проекта
-                    
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Знакомство с медиа запросами и адаптивностью
+                                <br></br>
+                                <br></br>
+                                - Создание адаптивности для учебного адаптивного проекта
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                    - Лекция про медиа запросы и адаптивность в целом
+                                    <br></br>
+                                    <br></br>
+                                    - Создание адаптивности для своих проектов
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
                 <div className='arrow_back'></div>
@@ -301,11 +453,36 @@ function ModalWindow() {
                     open={open8}
                   >
                     <div className='modal'>
-                    <p>
-                    - Знакомство с JS
-                      <br></br>
-                    - Создание JS функционала для учебного адаптивного проекта
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Знакомство с JS
+                                <br></br>
+                                <br></br>
+                                - Создание JS функционала для учебного адаптивного проекта
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Лекция про JS
+                                    <br></br>
+                                    <br></br>
+                                    - Создание JS функционала для своих проектов
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
               </div>
@@ -321,9 +498,33 @@ function ModalWindow() {
                     open={open9}
                   >
                     <div className='modal'>
-                    <p>
-                    - Создание html для учебного проекта REACT
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Создание html для учебного проекта REACT
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Лекция про REACT приложения
+                                    <br></br>
+                                    <br></br>
+                                    - Создание html для своих приложений
+                                    <br></br>
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
                 <div className='arrow_back'></div>
@@ -335,9 +536,29 @@ function ModalWindow() {
                     open={open10}
                   >
                     <div className='modal'>
-                    <p>
-                    - Создание стилей для учебного проекта REACT
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Создание стилей для учебного проекта REACT
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Создание стилей для своих проектов
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
                 <div className='arrow_back'></div>
@@ -349,11 +570,38 @@ function ModalWindow() {
                     open={open11}
                   >
                     <div className='modal'>
-                    <p>
-                    - Разбивка html кода на вьюхи
-                      <br></br>
-                    - Создание presentor
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Разбивка html кода на вьюхи
+                                <br></br>
+                                <br></br>
+                                - Создание presentor
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Лекция про REACT и SPA
+                                <br></br>
+                                <br></br>
+                                - Разбивка html кода своих проектов на вьюхи
+                                <br></br>
+                                <br></br>
+                                - Создание presentor
+                                </p>
+                              </div>
+                              
+                          </div>
+                          <a href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
+                                  Проект, над которым работаем
+                          </a>
+                      </div>
                     </div>
                   </Modal>
               </div>
@@ -369,14 +617,32 @@ function ModalWindow() {
                     open={open12}
                   >
                     <div className='modal'>
-                    <p>
-                    - Куда двигаться дальше
-                      <br></br>
-                    - Как результативно искать работу<br></br> (Реальные успешные кейсы к каждому варианту)
-                      <br></br>
-                      <br></br>
-                    - Создание резюме
-                      </p>
+                      <div className='modal_text'>
+                          <div className='text_title'>
+                              <p>План урока:</p>
+                              <p>Домашнее задание:</p>
+                          </div>
+                          <div className='text_main'>
+                              <div className='plan_text'>
+                                <p>
+                                - Куда двигаться дальше
+                                <br></br>
+                                <br></br>
+                                - Как результативно искать работу (Реальные успешные кейсы к каждому варианту)
+                                <br></br>
+                                <br></br>
+                                - Создание резюме
+                                </p>
+                              </div>
+                              <div className='line'></div>
+                              <div className='home_text'>
+                                <p>
+                                - Создание резюме
+                                </p>
+                              </div>
+                          </div>
+                          <p>Конец...?</p>
+                      </div>
                     </div>
                   </Modal>
               </div>

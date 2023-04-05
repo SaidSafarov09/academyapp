@@ -18,7 +18,7 @@ body {
 .main {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   max-width: 100vw;
   .main_block {
     width: 100%;
@@ -38,6 +38,9 @@ body {
       justify-content: space-between;
       padding-top: 25px;
       align-items: center;
+      .mobile-menu {
+        display: none;
+      }
       .header_links {
         display: flex;
         max-width: 928px;
@@ -731,15 +734,17 @@ body {
 .col {
   z-index: 20;
 }
-.mobile-menu {
+
   @media (max-width: 768px) {
+    .mobile-menu {
     width: 100vw !important;
     position: absolute !important;
     top: -100vh !important;
     transition: 1s !important;
     display: flex !important;
     flex-direction: column;
-    gap: 70px !important;
+    align-items: center;
+    gap: 55px !important;
     padding-top: 100px;
     background: linear-gradient(88.4deg, #002434 -3.98%, #005aa0 106.77%);
     z-index: 10;
@@ -749,12 +754,116 @@ body {
     border-bottom-right-radius: 50px;
 
     & a {
-      font-size: 26px !important;
+      font-size: 26px ;
+      color: #fff;
+      font-family: 'Arial Rounded MT Bold';
+      
     }
 
     &--hidden {
       top: 0 !important;
       transition: 1s !important;
     }
+
+    
+
+    
   }
+}
+@media (max-width: 768px) {
+    .header_links {
+        display: none !important;
+    }
+
+    .main .main_block .mobile-menu  {
+        a {
+            &::before {
+                @include defaul-pseudo-element(0, 3px);
+                transition: 0.85s;
+                bottom: -3px;
+                left: 50%;
+                background-color: #00c3ff;
+              }
+    
+              &:hover {
+                transform: scale(1.15);
+                transition: 0.85s;
+    
+                &::before {
+                  width: 100%;
+                  left: 0;
+                  transition: 0.85s;
+                }
+              }
+            }
+      
+    }
+
+    .main .main_block header .mobile-menu .phone_number .second ,
+    .main .main_block header .mobile-menu .phone_number .first {
+        padding-top: 10px;
+        a {
+            &::before {
+                @include defaul-pseudo-element(0, 3px);
+                transition: 0.85s;
+                bottom: -3px;
+                left: 50%;
+                background-color: #00c3ff;
+              }
+    
+              &:hover {
+                transform: scale(1.15);
+                transition: 0.85s;
+    
+                &::before {
+                  width: 100%;
+                  left: 0;
+                  transition: 0.85s;
+                }
+              }
+      }
+
+        }
+    }
+    .main .main_block header .mobile-menu {
+        gap: 20px;
+    }
+    .main .main_block header .mobile-menu .links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+        box-sizing: border-box;
+        a {
+            &::before {
+                @include defaul-pseudo-element(0, 3px);
+                transition: 0.85s;
+                bottom: -3px;
+                left: 50%;
+                background-color: #00c3ff;
+              }
+    
+              &:hover {
+                transform: scale(1.15);
+                transition: 0.85s;
+    
+                &::before {
+                  width: 100%;
+                  left: 0;
+                  transition: 0.85s;
+                }
+              }
+      }
+
+    }
+
+@media (max-width: 480px) {
+    .main .main_block header .mobile-menu a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 380px) {
+    .main .main_block header .mobile-menu .links {
+        padding: 0 50px;
+    }
 }

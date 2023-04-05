@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, {useState} from 'react';
 import '../styles/styles.scss';
 import logo from '../img/logo.svg';
 import kart from '../img/sakartvelo.png';
@@ -27,14 +28,34 @@ function Main() {
             src={logo}
             alt='Логотип академии.'
           ></img>
-          <div className='header_links mobile-menu'>
+          <div className='header_links'>
             <a href='#first-screen'>Главная</a>
             <a href='#course-block'>Про курс</a>
             <a href='#review-block'>Отзывы</a>
             <a href='#form-block'>Пробный урок</a>
             <a href='#contact-block'>Контакты</a>
-            {/* <a href="https://codepen.io/tonkec//" class="ua" target="_blank" rel="noreferrer">
-                            <i class="fa fa-user"></i></a> */}
+          </div>
+          <div className='mobile-menu'>
+            <a href='#first-screen'>Главная</a>
+            <a href='#course-block'>Про курс</a>
+            <a href='#review-block'>Отзывы</a>
+            <a href='#form-block'>Пробный урок</a>
+            <a href='#contact-block'>Контакты</a>
+
+            <div className='phone_number'>
+              <div className='first'>
+                <a href='tel:+41 79 827 21 64'>+41 79 827 21 64</a>
+              </div>
+              <div className='second'>
+                <a href='tel:+995 599 520 870'>+995 599 520 870</a>
+              </div>
+          </div>
+          <div className='links'>
+            <a href='https://www.linkedin.com/company/s-and-k-academy/'>
+              Linkedin
+            </a>
+            <a href='https://t.me/lysenko_konstantin_tg'>Telegram</a>
+          </div>
           </div>
           <div class='col' onClick={() => {
             const menu = document.querySelector('.mobile-menu');
@@ -122,7 +143,7 @@ function Main() {
                 type='text'
                 name='client_name'
                 placeholder='Ваше имя'
-               
+                // ref='clear'
               />
             </label>
           </div>
@@ -132,7 +153,7 @@ function Main() {
                 type='text'
                 name='phone_number'
                 placeholder='Ваш телеграмм/номер телефона'
-                r
+                // ref='clear'
               />
             </label>
           </div>
@@ -162,6 +183,7 @@ function Main() {
                 type='text'
                 name='promo_code'
                 placeholder='Промо код'
+                // ref='clear'
               />
             </label>
           </div>
@@ -169,6 +191,7 @@ function Main() {
             <button
               type='submit'
               href='#'
+              // onClick={this.refs.clear.value = ''}
             >
               Начать путь в <b>&nbsp;IT</b>
             </button>

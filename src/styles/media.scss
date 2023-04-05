@@ -79,6 +79,9 @@
   .main .footer .footer_content .brand p {
     font-size: 16px;
   }
+  .main .form .form_content .form_skills::after {
+    right: 20%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -121,6 +124,9 @@
   .main .footer .footer_content .brand a {
     font-size: 18px;
   }
+  .main .form .form_content .form_skills::after {
+    right: 12%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -146,6 +152,7 @@
   }
   .main .form .form_content {
     max-width: 500px;
+    border-radius: 40px;
   }
   .main .form .form_content .form_name_parent .form_content_name p {
     font-size: 16px;
@@ -198,6 +205,12 @@
   .main .form .form_content .form_button button {
     font-size: 30px;
   }
+  .col {
+    scale: 0.8;
+  }
+  .main .form .form_content .form_skills::after {
+    right: 8%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -233,9 +246,18 @@
   .main .footer .footer_content .links {
     padding-top: 10px;
   }
+  .main .form .form_content {
+    max-width: 450px;
+  }
+  .main .form .form_content .form_skills::after {
+    right: 0%;
+  }
 }
 
 @media (max-width: 480px) {
+    .main .main_block header .header_links a {
+        font-size: 16px;
+      } 
   .main .form .form_content {
     max-width: 380px;
     min-height: 550px;
@@ -255,7 +277,7 @@
     font-size: 14px;
   }
   .main .form .form_content .form_skills::after {
-    right: 11%;
+    right: 9%;
   }
   .main .form .form_content .form_button a {
     max-width: 200px;
@@ -287,18 +309,25 @@
     width: 250px;
     line-height: 25px;
   }
+  .col {
+    scale: 0.7;
+  }
+  .main .main_block header img {
+    scale: 0.9;
+  }
 }
 
 @media (max-width: 400px) {
   .main .form .form_content {
-    max-width: 300px;
-    min-height: 500px;
+    max-width: 320px;
+    min-height: 600px;
     padding: 50px 35px;
+    border-radius: 30px;
   }
   .main .form .form_content .form_name input,
   .main .form .form_content .form_number input {
     width: 200px;
-    height: 5px;
+    height: 10px;
     &::placeholder {
       font-size: 14px;
     }
@@ -356,5 +385,17 @@
   }
   .main .footer .footer_content .brand a {
     font-size: 14px;
+  }
+  .main .form .form_content {
+    max-width: 280px;
+  }
+  .main .form .form_content .form_button button {
+    font-size: 16px;
+  }
+  .col {
+    scale: 0.6;
+  }
+  .main .form .form_content .form_skills::after {
+    right: 2%;
   }
 }
