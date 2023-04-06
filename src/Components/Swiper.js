@@ -5,11 +5,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import avatar from '../img/avatar.png';
-import avatar1 from '../img/avatar-1.png';
-import avatar2 from '../img/avatar-2.png';
-import avatar3 from '../img/avatar-3.png';
-import avatar4 from '../img/avatar-4.png';
+import avatar from '../img/avatar.jpg';
+import avatar1 from '../img/avatar-1.jpg';
+import avatar2 from '../img/avatar-2.jpg';
+import avatar3 from '../img/avatar-3.jpg';
+import avatar4 from '../img/avatar-4.jpg';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {

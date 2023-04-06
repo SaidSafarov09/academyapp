@@ -27,6 +27,9 @@ function Main() {
           <img className='header__logo'
             src={logo}
             alt='Логотип академии.'
+            width={'214px'}
+            height={'113px'}
+
           ></img>
           <div className='header_links'>
             <a href='#first-screen'>Главная</a>
@@ -123,6 +126,10 @@ function Main() {
     });
     if (res) {
       handleOpenSubmit();
+      const inputs = evt.target.querySelectorAll('input');
+      const selects = evt.target.querySelectorAll('select');
+      inputs.forEach((input) => input.value = '')
+      selects.forEach((select) => select.value = '')
     } else {
         console.log('чёт не то');
     }
@@ -169,11 +176,14 @@ function Main() {
               >
                 Ваш опыт
               </option>
-              <option value='Обсолютно не разбираюсь в программировании'>
+              <option value='Абсолютно не разбираюсь в программировании'>
                 Абсолютно не разбираюсь в программировании
               </option>
               <option value='Пробовал, но что то пошло не так'>Пробовал, но что то пошло не так</option>
               <option value='Знаю основы HTML и CSS'>Знаю основы HTML и CSS</option>
+              <option value='Работаю в IT, но не разработчик'>Работаю в IT, но не разработчик</option>
+              <option value='Уже являюсь разработчиком, хочу повысить знания'>Уже являюсь разработчиком, хочу повысить знания</option>
+              <option value='Другое'>Другое</option>
             </select>
           </div>
 
@@ -241,6 +251,8 @@ function Main() {
             <img
               src={logo}
               alt='Логотип академии.'
+              width={'363px'}
+            height={'224px'}
             />
             <a href='mailto:SandK.academy.international@gmail.com'>
               SandK.academy.international@gmail.com

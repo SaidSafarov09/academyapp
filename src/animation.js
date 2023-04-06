@@ -21,8 +21,29 @@ const scale = (elem, duration = 1500) => {
   });
 };
 
+const opacityScale = (elem, duration = 1500) => {
+  ScrollReveal().reveal(elem, {
+    reset: false,
+    opacity: 0,
+    scale: 1.1,
+    distance: '0px',
+    duration: duration,
+    viewFactor: -60,
+  });
+};
+
+const opacity = (elem, duration = 1500) => {
+  ScrollReveal().reveal(elem, {
+    reset: false,
+    opacity: 0,
+    distance: '0px',
+    duration: duration,
+    viewFactor: -60,
+  });
+};
+
+
 export const startAnimation = () => {
-  console.log('1');
   if (!isMobile.matches) {
       move('.header_links', 'right', '1000px', 2000);
     }
@@ -36,5 +57,7 @@ export const startAnimation = () => {
     move('.feedback_carousel', 'bottom', '200px');
     move('.phone_number', 'left'); 
     move('.links', 'right'); 
-    scale('.brand');
+  scale('.brand');
+  opacityScale('.day');
+  opacity('.arrow');
 }

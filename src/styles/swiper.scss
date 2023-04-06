@@ -70,9 +70,10 @@
       font-size: 32px;
     }
   }
-  .swiper-slide, .swiper-slide {
+  .swiper-slide,
+  .swiper-slide {
     display: flex;
-  } 
+  }
   .slide .slide_text p {
     font-size: 20px;
   }
@@ -82,6 +83,7 @@
   .slide img {
     width: 160px;
     height: 160px;
+    border-radius: 50%;
   }
   .slide {
     width: 35vw;
@@ -125,7 +127,8 @@
   .swiper-button-prev.swiper-button-disabled,
   .swiper-button-next,
   .swiper-button-prev,
-  .swiper-button-next:after, .swiper-button-prev:after {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
     display: none;
   }
   .swiper-wrapper {

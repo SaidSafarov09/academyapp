@@ -147,9 +147,9 @@ function ModalWindow() {
 
           <div className='steps_content_main'>
             <div className='steps_days'>
-              <div className='days_1'>
+              <div className='days days_1'>
 
-                <button onClick={handleOpen1} className='day_1'>
+                <button onClick={handleOpen1} className='day day_1'>
                   <p>День 1</p>
                 </button>
                   <Modal 
@@ -191,7 +191,7 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/ztprxR9n1fL1iL9858D6Lq/Fashion?node-id=2%3A221&t=KSddfsQVcoKwlRaU-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/ztprxR9n1fL1iL9858D6Lq/Fashion?node-id=2%3A221&t=KSddfsQVcoKwlRaU-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
@@ -200,7 +200,7 @@ function ModalWindow() {
 
                 <div className='arrow'></div>
                 
-                <button onClick={handleOpen2} className='day_2'>
+                <button onClick={handleOpen2} className='day day_2'>
                   <p>День 2</p>
                 </button>
                   <Modal 
@@ -231,7 +231,7 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
@@ -239,7 +239,7 @@ function ModalWindow() {
                   </Modal>
 
                 <div className='arrow'></div>
-                <button onClick={handleOpen3} className='day_3'>
+                <button onClick={handleOpen3} className='day day_3'>
                   <p>День 3</p>
                 </button>
                   <Modal 
@@ -270,7 +270,7 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
@@ -280,8 +280,8 @@ function ModalWindow() {
               <div className='arrow_3'>
                 <div className='arrow'></div>
               </div>
-              <div className='days_2'>
-              <button onClick={handleOpen4} className='day_4'>
+              <div className='days days_2'>
+              <button onClick={handleOpen4} className='day day_4'>
                   <p>День 4</p>
                 </button>
                   <Modal 
@@ -312,14 +312,14 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/5OeztCQgeYNjacHqJViFGd/online-School-site?node-id=2415%3A26437&t=hzg1ZaH13yvOXYJT-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
                     </div>
                   </Modal>
                 <div className='arrow'></div>
-                <button onClick={handleOpen5} className='day_5'>
+                <button onClick={handleOpen5} className='day day_5'>
                   <p>День 5</p>
                 </button>
                   <Modal 
@@ -350,7 +350,7 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
@@ -360,8 +360,8 @@ function ModalWindow() {
               <div className='arrow_5'>
                 <div className='arrow'></div>
               </div>
-              <div className='days_3'>
-              <button onClick={handleOpen6} className='day_6'>
+              <div className='days days_3'>
+              <button onClick={handleOpen6} className='day day_6'>
                   <p>День 6</p>
                 </button>
                   <Modal 
@@ -397,14 +397,14 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
                     </div>
                   </Modal>
                 <div className='arrow_back'></div>
-                <button onClick={handleOpen7} className='day_7'>
+                <button onClick={handleOpen7} className='day day_7'>
                   <p>День 7</p>
                 </button>
                   <Modal 
@@ -438,14 +438,14 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
                     </div>
                   </Modal>
                 <div className='arrow_back'></div>
-                <button onClick={handleOpen8} className='day_8'>
+                <button onClick={handleOpen8} className='day day_8'>
                   <p>День 8</p>
                 </button>
                   <Modal 
@@ -479,7 +479,7 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/RQJVaG1NwSUzaOYEENxuA9/Lion-Realty-(Adaptive)?node-id=16%3A5&t=iK7XQGw9b0K248U0-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
@@ -489,8 +489,8 @@ function ModalWindow() {
               <div className='arrow_8'>
                 <div className='arrow'></div>
               </div>
-              <div className='days_4'>
-              <button onClick={handleOpen9} className='day_9'>
+              <div className='days days_4'>
+              <button onClick={handleOpen9} className='day day_9'>
                   <p>День 9</p>
                 </button>
                   <Modal 
@@ -521,14 +521,14 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
                     </div>
                   </Modal>
                 <div className='arrow_back'></div>
-                <button onClick={handleOpen10} className='day_10'>
+                <button onClick={handleOpen10} className='day day_10'>
                   <p>День 10</p>
                 </button>
                   <Modal 
@@ -555,14 +555,14 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
                     </div>
                   </Modal>
                 <div className='arrow_back'></div>
-                <button onClick={handleOpen11} className='day_11'>
+                <button onClick={handleOpen11} className='day day_11'>
                   <p>День 11</p>
                 </button>
                   <Modal 
@@ -598,7 +598,7 @@ function ModalWindow() {
                               </div>
                               
                           </div>
-                          <a href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
+                          <a class="day-description__modal-link" href='https://www.figma.com/file/EdDQDaxQJQWCgMSOufG2sX/restaurant-site?node-id=0%3A1&t=4baempZf2cYDeklQ-1'>
                                   Проект, над которым работаем
                           </a>
                       </div>
@@ -608,8 +608,8 @@ function ModalWindow() {
               <div className='arrow_11'>
                 <div className='arrow'></div>
               </div>
-              <div className='days_5'>
-              <button onClick={handleOpen12} className='day_12'>
+              <div className='days days_5'>
+              <button onClick={handleOpen12} className='day day_12'>
                   <p>День 12</p>
                 </button>
                   <Modal 

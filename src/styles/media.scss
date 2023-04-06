@@ -12,6 +12,7 @@
 
   .main .footer .footer_content .brand img {
     width: 260px;
+    height: auto;
   }
   .main .footer .footer_content .brand span {
     font-size: 24px;
@@ -30,6 +31,7 @@
 @media (max-width: 1320px) {
   .main .main_block header img {
     width: 180px;
+    height: auto;
   }
   .main .main_block header .header_links {
     width: 750px;
@@ -69,6 +71,7 @@
 
   .main .footer .footer_content .brand img {
     width: 200px;
+    height: auto;
   }
   .main .footer .footer_content .brand span {
     font-size: 18px;
@@ -235,6 +238,7 @@
   }
   .main .main_block header img {
     width: 150px;
+    height: auto;
   }
   .main .footer .footer_content .brand a,
   .main .footer .footer_content .phone_number a {
@@ -255,9 +259,9 @@
 }
 
 @media (max-width: 480px) {
-    .main .main_block header .header_links a {
-        font-size: 16px;
-      } 
+  .main .main_block header .header_links a {
+    font-size: 16px;
+  }
   .main .form .form_content {
     max-width: 380px;
     min-height: 550px;
@@ -314,6 +318,7 @@
   }
   .main .main_block header img {
     scale: 0.9;
+    height: auto;
   }
 }
 
@@ -367,6 +372,7 @@
   }
   .main .main_block header img {
     width: 120px;
+    height: auto;
   }
 }
 
